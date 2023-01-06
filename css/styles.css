@@ -94,6 +94,52 @@ body {
   text-align: center;
 }
 
+/* Status page */
+.center {
+  text-align: center;
+  padding: 50px;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 30px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+/* Green */
+.success {
+  color: green;
+}
+
+.success:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Blue */
+.info {
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+/* Orange */
+.warning {
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
