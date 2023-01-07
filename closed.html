@@ -4,9 +4,10 @@
 <title>Closed Complaints List</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+<link rel="stylesheet" type="text/css" href="css/styles.css" href="https://www.w3schools.com/w3css/4/w3.css"> 
 </head>
 <script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="w3.js"></script>
 <body>
 
 <div class="header">
@@ -23,17 +24,26 @@
   <a href="#" class="right">Link</a>
 </div>
 
-<div class="center">
-  <div class="center">
-    <a href="#"><button class="btn success">Closed Complaints</button></a>
-  </div>
-  <div class="center">
-    <a href="#"><button class="btn info">Pending Complaints</button></a>
-  </div>
-  <div class="center">
-    <a href="#"><button class="btn warning">KIV Complaints</button></a>
-  </div>
-</div>
+<table id="id01">
+  <tr>
+    <th>Title</th>
+    <th>Artist</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="cd">
+    <td>{{title}}</td>
+    <td>{{artist}}</td>
+    <td>{{price}}</td>
+  </tr>
+</table>
+
+<script>
+  w3.getHttpObject("cd_catalog.js", myFunction);
+  
+  function myFunction(myObject) {
+    w3.displayObject("id01", myObject);
+  }
+  </script>
 
 <div class="footer">
   <p>Copyright New Era University College 2022</p>
