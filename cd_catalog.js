@@ -1,4 +1,17 @@
 {
+  "data" : {
+    "type" : "jsonfile",
+    "filename" : "cd_catalog.js",
+    "record" : "cd"
+    "items" : [
+      {"name" : "title", "nodename" : "title"},
+      {"name" : "artist", "nodename" : "artist"},
+      {"name" : "price", "nodename" : "price"}
+    ]
+  }
+}
+
+{
   "cd" : [
   { "title" : "Empire Burlesque", "artist" : "Bob Dylan", "price" : "10.90" },
   { "title" : "Hide your heart", "artist" : "Bonnie Tyler", "price" : "9.90" },
